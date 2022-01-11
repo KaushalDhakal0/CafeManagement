@@ -15,11 +15,14 @@ const CocktailList = () => {
   }
 
   return (
-    <div>
-      {cocktails.map((drink) => {
-        return <Cocktail {...drink} key={drink.id} />;
-      })}
-    </div>
+    <section className="section">
+      <h2 className="section-title">cocktails</h2>
+      <div className="cocktails-center">
+        {cocktails.map((drink) => {
+          return <Cocktail {...drink} key={drink.id} />;
+        })}
+      </div>
+    </section>
   );
 };
 
